@@ -53,6 +53,7 @@ header a:hover {
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  margin: 0;
 }
 
 .site-nav a {
@@ -101,19 +102,19 @@ main {
 }
 
 /* COURSE SECTION */
-.course {
+.courses {
   padding: 6em 1em;
   display: grid;
   justify-content: center;
 }
 
-.course ul {
+.courses ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.course h3 {
+.courses h3 {
   text-align: center;
 }
 
