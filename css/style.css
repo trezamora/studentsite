@@ -1,4 +1,130 @@
-/* GLOBAL Reset*/
+/* GLOBAL RESET*/
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }
+
+/* GLOBAL COLORS*/
+body {
+  color: black;
+}
+a {
+  color: rgb(33, 131, 230, 0.8);
+}
+a:hover {
+  color: rgba(0, 51, 153, 1);
+}
+
+/* GLOBAL TYPOGRAPHY*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 88.75%; /* 14px */
+  line-height: 1.4;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(0, 102, 204, 1);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+header a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* SITE ID */
+.site-id h1 {
+  margin: 0;
+}
+
+/* SITE NAV */
+.site-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1em;
+}
+
+/* MAIN */
+main {
+  background: (0, 0, 0, 0.05);
+}
+
+/* SOCIAL NAV */
+.social-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-nav a {
+  display: block;
+  padding: 1em;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: rgba(0, 102, 204, 1);
+  text-align: center;
+  color: white;
+  padding: 6em 1em;
+}
+
+.hero h2 {
+  font-size: 6em;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.hero p {
+  max-width: 30em;
+  text-align: center;
+  margin: 1em auto;
+}
+
+/* COURSE SECTION */
+.course {
+  padding: 6em 1em;
+  display: grid;
+  justify-content: center;
+}
+
+.course ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course h3 {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1em;
+}
+
+/* FOR WEB DEV PURPOSES ONLY
+body, * {
+    background-color: rgba(0,0,0,.05);
+    border: 1px solid rgba(0,0,0,.1);
+    color: rgba(0,0,0,.5); */
