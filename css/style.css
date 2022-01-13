@@ -8,10 +8,11 @@ body {
 
 /* GLOBAL COLORS*/
 body {
-  color: rgb(8, 8, 8);
+  background-color: rgb(2, 2, 2);
+  color: rgb(247, 247, 247);
 }
 a {
-  color: rgba(8, 8, 8, 0.8);
+  color: rgba(247, 247, 247, 0.8);
 }
 a:hover {
   color: rgb(0, 141, 71, 1);
