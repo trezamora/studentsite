@@ -164,7 +164,7 @@ aside {
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
   background-color: rgb(75, 75, 75);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(247, 247, 247);
 }
 
 .page-home .hero {
@@ -197,7 +197,7 @@ pre code {
   width: 100%;
   display: block;
   border: 1px solid #ddd;
-  background-color: #fff;
+  background-color: rgb(8, 8, 8);
   padding: 1em 3em;
   margin-bottom: 1em;
   line-height: 1.5;
@@ -206,7 +206,7 @@ pre code {
 .markup-box {
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: rgb(8, 8, 8);
   padding: 1em 3em;
   margin-bottom: 1em;
 }
