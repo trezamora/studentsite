@@ -15,7 +15,7 @@ a {
   color: rgba(247, 247, 247, 0.8);
 }
 a:hover {
-  color: rgb(0, 141, 71, 1);
+  color: rgb(0, 197, 99, 1);
 }
 
 /* GLOBAL TYPOGRAPHY*/
@@ -42,7 +42,7 @@ header a {
 }
 
 header a:hover {
-  color: rgba(0, 141, 71, 1);
+  color: rgb(0, 197, 99, 1);
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -88,6 +88,7 @@ header a:hover {
 
 .bracketsanim a:hover:before,
 .bracketsanim a:hover:after {
+  color: #fff;
   opacity: 1;
   transform: translateX(0px);
 }
