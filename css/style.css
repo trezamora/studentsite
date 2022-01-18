@@ -52,6 +52,46 @@ header a:hover {
   margin: 0;
 }
 
+/* BRACKETS DECO */
+
+.bracketsdeco a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+/* BRACKETS ANIM */
+.bracketsanim a:before,
+.bracketsanim a:after {
+  position: absolute;
+  opacity: 0;
+  font-size: 35px;
+  top: 0px;
+  transition: all 0.3s;
+}
+
+.bracketsanim a:before {
+  content: "(";
+  left: -8px;
+  transform: translateX(10px);
+}
+
+.bracketsanim a:after {
+  content: ")";
+  right: -8px;
+  transform: translateX(-10px);
+}
+
+.bracketsanim a:hover:before,
+.bracketsanim a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
 /* SITE NAV */
 .site-nav ul {
   display: flex;
@@ -65,9 +105,9 @@ header a:hover {
   padding: 1em;
 }
 
-/* NAV DECO */
+/* DBL LINE DECO */
 
-.navdeco a {
+.dbllinedeco a {
   color: #fff;
   text-decoration: none;
   font: 14px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -78,9 +118,10 @@ header a:hover {
   cursor: pointer;
 }
 
-/* NAV ANIMATION */
-.navanim a:before,
-.navanim a:after {
+/* DBL LINE ANIMATION */
+
+.dbllineanim a:before,
+.dbllineanim a:after {
   position: absolute;
   opacity: 0.5;
   height: 100%;
@@ -90,20 +131,20 @@ header a:hover {
   transition: all 0.5s;
 }
 
-.navanim a:before {
+.dbllineanim a:before {
   left: 0px;
   top: 0px;
   height: 0%;
 }
 
-.navanim a:after {
+.dbllineanim a:after {
   right: 0px;
   bottom: 0px;
   height: 0%;
 }
 
-.navanim a:hover:before,
-.navanim a:hover:after {
+.dbllineanim a:hover:before,
+.dbllineanim a:hover:after {
   opacity: 1;
   height: 0.5px;
   width: 100%;
