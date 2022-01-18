@@ -39,11 +39,10 @@ header a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   text-transform: uppercase;
-  
+}
 
 header a:hover {
   color: rgba(0, 141, 71, 1);
-  /* display: inline-block; */
 }
 
 /* SITE ID */
