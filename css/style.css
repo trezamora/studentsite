@@ -65,6 +65,50 @@ header a:hover {
   padding: 1em;
 }
 
+/* NAV DECO */
+
+.navdeco a {
+  color: #fff;
+  text-decoration: none;
+  font: 14px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+/* NAV ANIMATION */
+.navanim a:before,
+.navanim a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 1px;
+  content: "";
+  background: white;
+  transition: all 0.5s;
+}
+
+.navanim a:before {
+  left: 0px;
+  top: 0px;
+  height: 0%;
+}
+
+.navanim a:after {
+  right: 0px;
+  bottom: 0px;
+  height: 0%;
+}
+
+.navanim a:hover:before,
+.navanim a:hover:after {
+  opacity: 1;
+  height: 0.5px;
+  width: 100%;
+}
+
 /* MAIN */
 main {
   background: (0, 0, 0, 0.05);
