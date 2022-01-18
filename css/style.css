@@ -43,6 +43,8 @@ header a {
 
 header a:hover {
   color: rgba(0, 141, 71, 1);
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* SITE ID */
@@ -164,15 +166,21 @@ aside {
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(0, 73, 37);
   color: rgba(247, 247, 247);
+}
+
+.page-sub header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
 }
 
 .page-home .hero {
   background-image: url(../img/neonkeys.jpg);
   background-position: center;
   background-size: cover;
-  padding: 30vh 1em 20vh 1em;
+  /* padding: 30vh 1em 20vh 1em; */
 }
 
 .page-home header {
