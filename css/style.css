@@ -221,7 +221,9 @@ dd {
   margin: 0;
 }
 
-/* FOR WEB DEV PURPOSES ONLY
+/* ANIMATIONS */
+.site-id
+  .site-nav; /* FOR WEB DEV PURPOSES ONLY
 body, * {
     background-color: rgba(0,0,0,.05);
     border: 1px solid rgba(0,0,0,.1);
