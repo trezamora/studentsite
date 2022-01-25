@@ -15,7 +15,7 @@ a {
   color: rgba(247, 247, 247, 0.8);
 }
 a:hover {
-  color: rgb(0, 197, 99, 1);
+  color: rgba(0, 197, 99, 1);
 }
 
 /* GLOBAL TYPOGRAPHY*/
@@ -153,7 +153,7 @@ header a:hover {
 
 /* MAIN */
 main {
-  background: (0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 section {
@@ -294,7 +294,7 @@ aside {
 }
 
 .projects {
-  margin: em;
+  margin: 1em;
 }
 
 /* CODE BLOCKS */
