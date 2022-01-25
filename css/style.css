@@ -151,9 +151,9 @@ header a:hover {
   width: 100%;
 }
 
-/* MAIN */
-main {
-  background: rgba(0, 0, 0, 0.05);
+/* BODY */
+.bg {
+  background-color: rgb(8, 8, 8);
 }
 
 section {
@@ -162,7 +162,6 @@ section {
 
 /* FOOTER */
 footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding: 1em;
 }
 
@@ -185,7 +184,7 @@ footer a {
   }
 
   .two-col-sidebar aside {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgb(245, 244, 244);
     margin: 0 3em 2em 0;
     padding: 0.3em 2em 0 0;
   }
@@ -220,7 +219,6 @@ aside {
 
 /* HERO SECTION */
 .hero {
-  background-color: rgba(0, 141, 71, 1);
   text-align: center;
   color: white;
   padding: 6em 1em;
