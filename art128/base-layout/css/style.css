@@ -314,11 +314,6 @@ body.demo::before {
   .row > .column .one-fourth {
     max-width: 21%;
   }
-
-  /* .row > .column .centered {
-    margin-left: auto;
-    margin-right: auto;
-  } */
 }
 /* FOR DEMO PURPOSES ONLY */
 /* PLAY AROUND WITH MARGIN TO CONTROL GUTTERS */
