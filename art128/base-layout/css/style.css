@@ -291,28 +291,38 @@ body.demo::before {
 
 @media (min-width: 768px) {
   .row {
+    gap: 30px;
     display: flex;
-    justify-content: space-between;
-    margin-left: -2%;
-    margin-right: -2%;
+    /* justify-content: space-between; */
+    /* margin-left: -2%;
+    margin-right: -2%; */
   }
 
   .row > .column {
     flex-grow: 1;
-    margin-left: 2%;
-    margin-right: 2%;
+    /* margin-left: 2%;
+    margin-right: 2%; */
   }
 
-  .row > .column .one-half {
-    max-width: 46%;
+  .row > .column.one-half {
+    max-width: 50%;
   }
 
-  .row > .column .one-third {
-    max-width: 29.3333%;
+  .row > .column.one-third {
+    max-width: 33.3333%;
   }
 
-  .row > .column .one-fourth {
-    max-width: 21%;
+  .row > .column.two-thirds {
+    max-width: 64.6666%;
+  }
+
+  .row > .column.one-fourth {
+    max-width: 25%;
+  }
+
+  .row > .column.centered {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* FOR DEMO PURPOSES ONLY */
