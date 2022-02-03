@@ -8,14 +8,14 @@ body {
 
 /* GLOBAL COLORS*/
 body {
-  background-color: rgb(2, 2, 2);
-  color: rgb(247, 247, 247);
+  background-color: rgb(214, 214, 214);
+  color: rgb(19, 19, 19);
 }
 a {
-  color: rgba(247, 247, 247, 0.8);
+  color: rgba(39, 39, 39, 0.8);
 }
 a:hover {
-  color: rgba(0, 197, 99, 1);
+  color: rgb(212, 195, 95);
 }
 
 /* GLOBAL TYPOGRAPHY*/
@@ -27,8 +27,8 @@ body {
 
 /* HEADER */
 header {
-  background-color: rgb(8, 8, 8);
-  color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(214, 214, 214);
+  color: rgba(0, 0, 0, 1);
   padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -36,7 +36,7 @@ header {
 }
 
 header a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -153,7 +153,7 @@ header a:hover {
 
 /* BODY */
 .bg {
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(214, 214, 214);
 }
 
 section {
@@ -260,7 +260,7 @@ aside {
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
-  background-color: rgb(0, 73, 37);
+  background-color: rgb(189, 159, 105);
   color: rgba(247, 247, 247);
 }
 
@@ -271,7 +271,7 @@ aside {
 }
 
 .page-home .hero {
-  background-image: url(../img/neonkeys.jpg);
+  background-image: url(../img/moon.jpg);
   background-position: center;
   background-size: cover;
   /* padding: 30vh 1em 20vh 1em; */
@@ -295,12 +295,14 @@ aside {
   margin: 1em;
 }
 
+/* FOOTER */
+
 /* CODE BLOCKS */
 pre code {
   width: 100%;
   display: grid;
   border: 1px solid #ddd;
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(255, 255, 255);
   padding: 1em 3em;
   margin-bottom: 1em;
   line-height: 1.5;
@@ -309,7 +311,7 @@ pre code {
 .markup-box {
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(255, 255, 255);
   padding: 1em 3em;
   margin-bottom: 1em;
 }
