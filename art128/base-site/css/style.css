@@ -381,9 +381,6 @@ body.demo::before {
   justify-content: center;
 }
 
-.site-nav li {
-}
-
 .site-nav a {
   display: inline-block;
   padding: 1em;
