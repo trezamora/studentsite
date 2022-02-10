@@ -1,0 +1,663 @@
+/* BASE CSS (Initial Setup)
+ ---------------------------------
+    #BASE CONTENT
+        #TYPOGRAPHY
+            #BODY
+            #HEADINGS
+            #PARAGRAPHS
+            #LINKS
+            #HELPERS
+        #MEDIA
+            #IMAGES
+        #COMPONENTS
+            #BUTTONS
+    #BASE LAYOUT
+        #SIMPLE RESET
+        #CONTAINER
+        #MEDIAQUERIES
+        #GRID SYSTEM
+            #CLEARFIX
+    #BASE SITE
+        #SITE STRUCTURE
+            #HEADER
+                # site-id (LOGO)
+            #FOOTER
+            #SECTIONS
+            #SUB PAGES
+            #ARTICLE
+        #SITE NAVIGATION
+            #TOGGLE-NAV (Default for Small Screens)
+--------------------------------- */
+
+/* TYPOGRAPHY — BASE BODY */
+/* Reference
+	62.5%  => 10px
+	68.8%  => 11px
+	75%    => 12px
+	81.3%  => 13px
+	87.5%  => 14px
+	100%   => 16px
+	112.5% => 18px
+	125%   => 20px
+*/
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 87.5%; /* 87.5%  => 14px OR 100% FONT SIZE 16px = 1em justify headings */
+  line-height: 1.5; /* 14px x 1.5em = 21px */
+}
+
+/* HEADINGS */
+/* Based on a Traditional Typographic Scale
+48, 36, 24, 21, 18, 16 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 3em;
+  /* 48px / 16px = 3em */
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.25em;
+  /* 36px / 16px = 2.25em */
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1.5em;
+  /* 24px / 16px = 1.5em */
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.3125em;
+  /* 21px / 16px = 1.3125em */
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: 1.125em;
+  /* 18px / 16px = 1.125em */
+  line-height: 1.4;
+}
+
+h6 {
+  font-size: 1em;
+  /* 16px / 16px = 1em */
+  line-height: 1.5;
+}
+
+/* PARAGRAPHS */
+
+p {
+  margin: 0.5em 0;
+  max-width: 38em;
+}
+
+/* .centered p {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* strong {
+  font-weight: 700; HAS ABILITY TO CONTROL THE WEIGHT
+}
+em {
+  font-style: italic; SAME CONTROLABLE FEATURE
+} */
+
+/* LINKS */
+
+a {
+  color: rgba(0, 153, 0, 0.8);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0, 153, 0, 1);
+  text-decoration: underline;
+}
+
+/* BLOCK QUOTES */
+
+blockquote {
+  font-size: 1.142em;
+  margin: 1.5em 0;
+  padding: 1.5em;
+  border-top: 0px solid #ccc;
+  border-bottom: 0px solid #ccc;
+}
+
+blockquote cite {
+  display: block;
+  opacity: 0.8;
+  font-size: 0.875em;
+}
+
+blockquote cite:before {
+  content: "—";
+  margin-right: 0.25em;
+}
+
+/* HELPER CLASSES */
+
+.text-centered {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.full-width {
+  max-width: none;
+  width: 100%;
+}
+
+.horiz-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* IMAGES */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* BUTTONS */
+
+.button,
+button,
+form input[type="submit"] {
+  font-size: inherit;
+  line-height: 1;
+  background-color: rgba(0, 153, 0, 1);
+  border: 1px solid rgba(0, 153, 0, 1);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1em;
+  display: inline-block;
+  margin: 0.5em 0.5em 0.5em 0;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.button,
+button:hover,
+form input[type="submit"]:hover {
+  background-color: rgba(0, 107, 0, 1);
+  border-color: rgba(0, 153, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  border-radius: 1em;
+}
+
+.button.alt {
+  background-color: transparent;
+  color: rgba(0, 153, 0, 0.8);
+}
+
+.button.alt:hover {
+  background-color: rgb(0, 107, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* LAYOUT */
+/* SIMPLE RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 4%;
+}
+
+/* MEDIA QUERIES (FOR RESPONSIVE DESIGN FOR SCREEN SIZE) */
+
+@media (min-width: 768px) {
+  /* TABLET SIZE STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+  body {
+    font-size: 100%; /* 16px */
+  }
+}
+
+@media (min-width: 1250px) {
+  body {
+    font-size: 112.5%; /* 18px */
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* FOR DEMO PURPOSES ONLY */
+
+body.demo {
+  padding-top: 2em;
+}
+body.demo::before {
+  content: "Small Screen (Mobile) Less Than 768px";
+  background-color: burlywood;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  color: white;
+  padding: 0.5em;
+}
+
+@media (min-width: 768px) {
+  body.demo::before {
+    background-color: chocolate;
+    content: "Midsize Screen (Tablet) 768px - 1050px";
+  }
+}
+
+@media (min-width: 1050px) {
+  body.demo::before {
+    background-color: crimson;
+    content: "Large Screen (Notebook) 1050px - 1250px";
+  }
+}
+
+@media (min-width: 1250px) {
+  body.demo::before {
+    background-color: blueviolet;
+    content: "Extra Large Screen (Desktop) 1250px +";
+  }
+}
+
+/* GRID SYSTEM */
+
+.row > .column {
+  margin-bottom: 4%;
+}
+
+@media (min-width: 768px) {
+  .row {
+    gap: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* margin-left: -2%;
+    margin-right: -2%; */
+  }
+
+  .row > .column {
+    flex-grow: 1;
+    /* margin-left: 2%;
+    margin-right: 2%; */
+  }
+
+  .row > .column.one-half {
+    max-width: 50%;
+  }
+
+  .row > .column.one-third {
+    max-width: 33.3333%;
+  }
+
+  .row > .column.two-thirds {
+    max-width: 64.6666%;
+  }
+
+  .row > .column.one-fourth {
+    max-width: 25%;
+  }
+
+  .row > .column.centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* FOR DEMO PURPOSES ONLY */
+/* PLAY AROUND WITH MARGIN TO CONTROL GUTTERS */
+
+.demo .column {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  text-align: center;
+}
+
+/* SITE STRUCTURE */
+
+/* SITE HEADER */
+.site-header {
+  padding: 1em 0;
+}
+
+/* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
+@media (min-width: 768px) {
+  .site-header .container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: baseline; */
+  }
+}
+
+/* STYLING FOR HEADER AND FOOTER */
+
+.site-header a,
+.site-footer a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.site-header a:hover,
+.site-footer a:hover {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+/* LOGO AREA */
+.site-id h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding-top: 0.55em;
+  text-align: center;
+}
+
+.site-id h1 .b {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* SITE NAV */
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 1em;
+}
+
+.site-nav .menu-button {
+  display: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 3em 0;
+}
+
+/* HERO */
+
+.hero {
+  padding: 6em 4%;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hero h1,
+p {
+  max-width: 688px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TOGGLE NAV */
+
+@media (max-width: 767px) {
+  .toggle-nav .site-id {
+    position: absolute;
+  }
+
+  .toggle-nav .site-nav {
+    text-align: right;
+  }
+
+  .toggle-nav .site-nav .menu-button {
+    display: block;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.3em 0.8em;
+    margin-bottom: 0.8em;
+    border: 1px solid black;
+  }
+
+  .toggle-nav .site-nav .menu-button::selection {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .toggle-nav .site-nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .toggle-nav .site-nav a:hover {
+    background-color: rgba(0, 153, 0, 1);
+    color: white;
+  }
+
+  .toggle-nav[data-navstate="closed"] ul {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .toggle-nav[data-navstate="open"] ul {
+    height: auto;
+    overflow: visible;
+  }
+
+  /* NAVICON */
+
+  .toggle-nav .site-nav .menu-button.navicon {
+    border: none;
+    color: rgba(255, 255, 255, 0);
+    padding: 0;
+  }
+
+  .toggle-nav .site-nav .menu-button.navicon::after {
+    content: "\2630";
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5em;
+  }
+
+  .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+    content: "\2715";
+  }
+}
+
+/* ANIMATED TOGGLE NAV MENU */
+
+@media (max-width: 767px) {
+  .toggle-nav.animated ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    border-width: 0;
+    transition: all 0.3s ease;
+  }
+
+  .toggle-nav.animated[data-navstate="open"] ul {
+    max-height: 138em;
+    opacity: 1;
+    padding: 0.5em 0;
+    border-width: 0px;
+    transition: all 0.6s ease;
+  }
+
+  .toggle-nav.animated li {
+    padding: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .toggle-nav.animated[data-navstate="open"] li {
+    padding: 0.25em;
+    opacity: 1;
+    transition: all 0.6s ease 0.2s;
+  }
+
+  .toggle-nav.animated li a {
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+
+  .toggle-nav.animated[data-navstate="open"] li a {
+    padding: 0.75em;
+  }
+}
+
+/* ARTICLES */
+article {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article h1,
+article h1 + .subhead,
+article .date {
+  text-align: center;
+}
+
+article h2.subhead {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+article .subhead {
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+article h4.subhead {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+article .date {
+  font-size: 0.8em;
+  opacity: 0.5;
+  margin-bottom: 2.5em;
+}
+
+article p + h2,
+article p + h3,
+article p + h4 {
+  margin-top: 1.5em;
+}
+
+article p:first-of-type {
+  font-size: 1.4em;
+  line-height: 1.3;
+}
+
+article p:first-of-type:first-letter {
+  font-size: 3em;
+  line-height: 0.9em;
+  background-color: black;
+  color: white;
+  padding: 0.2em 0.4em;
+  margin-right: 0.1em;
+  float: left;
+}
+
+/* FORMS */
+
+form {
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+form label,
+form input,
+form textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+}
+
+form label {
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+form input,
+form textarea {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  color: #666;
+}
+
+form textarea {
+  min-height: 12em;
+  line-height: 1.5em;
+}
+
+form input[type="submit"] {
+  margin-top: 1.5em;
+  width: auto;
+}
+
+/* CUSTOM SITE CSS */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin: 0.5em auto;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.site-header.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.site-header.sticky + main {
+  padding-top: 3em;
+}
+
+#about {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#contact {
+  background-color: rgba(0, 0, 0, 0.1);
+}
