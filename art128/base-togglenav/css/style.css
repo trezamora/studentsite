@@ -429,7 +429,7 @@ p {
     border: none;
     cursor: pointer;
     padding: 0.3em 0.8em;
-    margin bottom: 0.8em;
+    margin-bottom: 0.8em;
     border: 1px solid black;
   }
 
@@ -447,36 +447,36 @@ p {
     color: white;
   }
 
-    .toggle-nav[data-navstate=closed] ul {
-      height: 0;
-      overflow: hidden;
-    }
+  .toggle-nav[data-navstate="closed"] ul {
+    height: 0;
+    overflow: hidden;
+  }
 
-    .toggle-nav[data-navstate=open] ul {
-      height: auto;
-      overflow: visible;
-    }
+  .toggle-nav[data-navstate="open"] ul {
+    height: auto;
+    overflow: visible;
+  }
 
-    /* NAVICON */
+  /* NAVICON */
 
-    .toggle-nav .site-nav .menu-button.navicon {
-      border: none;
-      color: rgba(255, 255, 255, 0);
-      padding: 0;
-    }
+  .toggle-nav .site-nav .menu-button.navicon {
+    border: none;
+    color: rgba(255, 255, 255, 0);
+    padding: 0;
+  }
 
-    .toggle-nav .site-nav .menu-button.navicon::after {
-      content: "\2630";
-      display: inline-block;
-      padding: 0;
-      margin: 0;
-      color: rgba(0, 0, 0, 0.8);
-      font-size: 1.5em;
-    }
+  .toggle-nav .site-nav .menu-button.navicon::after {
+    content: "\2630";
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5em;
+  }
 
-    .toggle-nav[data-navstate=open] .site-nav .menu-button.navicon::after {
-      content: "\2715";
-    }
+  .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+    content: "\2715";
+  }
 }
 
 /* ANIMATED TOGGLE NAV MENU */
@@ -492,7 +492,7 @@ p {
     transition: all 0.3s ease;
   }
 
-  .toggle-nav.animated[data-navstate=open] ul {
+  .toggle-nav.animated[data-navstate="open"] ul {
     max-height: 138em;
     opacity: 1;
     padding: 0.5em 0;
@@ -506,7 +506,7 @@ p {
     transition: all 0.3s ease;
   }
 
-  .toggle-nav.animated[data-navstate=open] li {
+  .toggle-nav.animated[data-navstate="open"] li {
     padding: 0.25em;
     opacity: 1;
     transition: all 0.6s ease 0.2s;
@@ -517,7 +517,7 @@ p {
     transition: all 0.3s ease;
   }
 
-  .toggle-nav.animated[data-navstate=open] li a {
+  .toggle-nav.animated[data-navstate="open"] li a {
     padding: 0.75em;
   }
 }
