@@ -8,26 +8,25 @@ body {
 
 /* GLOBAL COLORS*/
 body {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(181, 202, 181);
   color: rgb(19, 19, 19);
 }
 a {
-  color: rgba(39, 39, 39, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 a:hover {
-  color: rgb(212, 195, 95);
+  color: rgb(89, 97, 59, 1);
 }
 
 /* GLOBAL TYPOGRAPHY*/
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 88.75%; /* 14px */
   line-height: 1.4;
 }
 
 /* HEADER */
 header {
-  background-color: rgb(214, 214, 214);
   color: rgba(0, 0, 0, 1);
   padding: 1em;
   display: grid;
@@ -50,6 +49,19 @@ header a:hover {
 /* SITE ID */
 .site-id h1 {
   margin: 0;
+}
+
+/* SITE NAV */
+.site-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+}
+
+.site-nav a {
+  display: block;
+  padding: 1em;
 }
 
 /* BRACKETS DECO */
@@ -75,13 +87,13 @@ header a:hover {
 }
 
 .bracketsanim a:before {
-  content: "(";
+  content: "[";
   left: -8px;
   transform: translateX(10px);
 }
 
 .bracketsanim a:after {
-  content: ")";
+  content: "]";
   right: -8px;
   transform: translateX(-10px);
 }
@@ -93,23 +105,27 @@ header a:hover {
   transform: translateX(0px);
 }
 
-/* SITE NAV */
-.site-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
+section {
+  padding: 3em 1em;
 }
 
-.site-nav a {
-  display: block;
-  padding: 1em;
-}
+/* DBL LINE DECO HEADER */
 
-/* DBL LINE DECO */
-
-.dbllinedeco a {
+header .dbllinedeco a {
   color: #fff;
+  text-decoration: none;
+  font: 14px "Futura", sans-serif;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+/* DBL LINE DECO FOOTER */
+
+footer .dbllinedeco a {
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   font: 14px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px 10px;
@@ -119,10 +135,10 @@ header a:hover {
   cursor: pointer;
 }
 
-/* DBL LINE ANIMATION */
+/* DBL LINE ANIMATION SITE NAV */
 
-.dbllineanim a:before,
-.dbllineanim a:after {
+.site-nav.dbllineanim a:before,
+.site-nav.dbllineanim a:after {
   position: absolute;
   opacity: 0.5;
   height: 100%;
@@ -132,36 +148,60 @@ header a:hover {
   transition: all 0.5s;
 }
 
-.dbllineanim a:before {
+.site-nav.dbllineanim a:before {
   left: 0px;
   top: 0px;
   height: 0%;
 }
 
-.dbllineanim a:after {
+.site-nav.dbllineanim a:after {
   right: 0px;
   bottom: 0px;
   height: 0%;
 }
 
-.dbllineanim a:hover:before,
-.dbllineanim a:hover:after {
+.site-nav.dbllineanim a:hover:before,
+.site-nav.dbllineanim a:hover:after {
   opacity: 1;
   height: 0.5px;
   width: 100%;
 }
 
-/* BODY */
-.bg {
-  background-color: rgb(214, 214, 214);
+/* DBL LINE ANIMATION SOCIAL NAV */
+
+.social-nav.dbllineanim a:before,
+.social-nav.dbllineanim a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 1px;
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
 }
 
-section {
-  padding: 3em 1em;
+.social-nav.dbllineanim a:before {
+  left: 0px;
+  top: 0px;
+  height: 0%;
+}
+
+.social-nav.dbllineanim a:after {
+  right: 0px;
+  bottom: 0px;
+  height: 0%;
+}
+
+.social-nav.dbllineanim a:hover:before,
+.social-nav.dbllineanim a:hover:after {
+  opacity: 1;
+  height: 0.5px;
+  width: 100%;
 }
 
 /* FOOTER */
 footer {
+  color: rgba(0, 0, 0, 0.8);
   padding: 1em;
 }
 
@@ -226,6 +266,7 @@ aside {
 }
 
 .hero h2 {
+  font-family: "Futura";
   font-size: 6em;
   line-height: 1;
   text-transform: uppercase;
@@ -261,7 +302,6 @@ aside {
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
-  background-color: rgb(189, 159, 105);
   color: rgba(247, 247, 247);
 }
 
@@ -271,8 +311,15 @@ aside {
   width: 100%;
 }
 
+.page-sub .hero {
+  background-image: url(../img/monstera.gif);
+  background-position: center;
+  background-size: cover;
+  /* padding: 30vh 1em 20vh 1em; */
+}
+
 .page-home .hero {
-  background-image: url(../img/moon.jpg);
+  background-image: url(../img/monstera.gif);
   background-position: center;
   background-size: cover;
   /* padding: 30vh 1em 20vh 1em; */
@@ -295,8 +342,6 @@ aside {
 .projects {
   margin: 1em;
 }
-
-/* FOOTER */
 
 /* CODE BLOCKS */
 pre code {
