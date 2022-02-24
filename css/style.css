@@ -272,10 +272,11 @@ aside {
   text-transform: uppercase;
   margin: 0 auto;
 }
+/* NEON LIGHT & FLICKER ANIMATION */
 
 .neon-lights {
   background-image: radial-gradient(
-    ellipse 25% 35% at 50% 50%,
+    ellipse 15% 15% at 50% 50%,
     #295229,
     transparent
   );
