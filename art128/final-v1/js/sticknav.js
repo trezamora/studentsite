@@ -9,4 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
             stickyheader.setAttribute('data-navstate', 'closed');
         };
     };
+
+    /* SITD ID TOGGLE NAV CLOSE MENU NAV */
+    const stickyidlink = document.querySelector(".sticky .site-id a");
+    stickyidlink.onclick = function () {
+        stickyheader.setAttribute('data-navstate', 'closed');
+    };
+
 });
