@@ -175,7 +175,7 @@ button,
 form input[type="submit"] {
   font-size: inherit;
   line-height: 1;
-  background-color: rgba(0, 153, 0, 1);
+  background-color: transparent;
   border: 1px solid rgba(0, 153, 0, 1);
   color: rgba(255, 255, 255, 0.8);
   padding: 1em;
@@ -246,7 +246,7 @@ body {
 
 /* FOR DEMO PURPOSES ONLY */
 
-body.demo {
+/* body.demo {
   padding-top: 2em;
 }
 body.demo::before {
@@ -279,7 +279,7 @@ body.demo::before {
     background-color: blueviolet;
     content: "Extra Large Screen (Desktop) 1250px +";
   }
-}
+} */
 
 /* GRID SYSTEM */
 
@@ -326,17 +326,17 @@ body.demo::before {
 /* FOR DEMO PURPOSES ONLY */
 /* PLAY AROUND WITH MARGIN TO CONTROL GUTTERS */
 
-.demo .column {
+/* .demo .column {
   background: rgba(0, 0, 0, 0.2);
   padding: 1em;
   text-align: center;
-}
+} */
 
 /* SITE STRUCTURE */
 
 /* SITE HEADER */
 .site-header {
-  padding: 1em 0;
+  padding: 2em 0;
 }
 
 /* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
