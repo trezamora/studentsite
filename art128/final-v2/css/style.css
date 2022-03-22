@@ -1,46 +1,3 @@
-/* BASE CSS (Initial Setup)
- ---------------------------------
-    #BASE CONTENT
-        #TYPOGRAPHY
-            #BODY
-            #HEADINGS
-            #PARAGRAPHS
-            #LINKS
-            #HELPERS
-        #MEDIA
-            #IMAGES
-        #COMPONENTS
-            #BUTTONS
-    #BASE LAYOUT
-        #SIMPLE RESET
-        #CONTAINER
-        #MEDIAQUERIES
-        #GRID SYSTEM
-            #CLEARFIX
-    #BASE SITE
-        #SITE STRUCTURE
-            #HEADER
-                # site-id (LOGO)
-            #FOOTER
-            #SECTIONS
-            #SUB PAGES
-            #ARTICLE
-        #SITE NAVIGATION
-            #TOGGLE-NAV (Default for Small Screens)
---------------------------------- */
-
-/* TYPOGRAPHY — BASE BODY */
-/* Reference
-	62.5%  => 10px
-	68.8%  => 11px
-	75%    => 12px
-	81.3%  => 13px
-	87.5%  => 14px
-	100%   => 16px
-	112.5% => 18px
-	125%   => 20px
-*/
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgba(0, 0, 0, 0.8);
@@ -113,7 +70,7 @@ a {
 }
 
 a:hover {
-  color: rgba(0, 0, 0, 1);
+  color: white;
   text-decoration: underline;
 }
 
@@ -214,43 +171,6 @@ body {
   }
 }
 
-/* FOR DEMO PURPOSES ONLY */
-
-/* body.demo {
-  padding-top: 2em;
-}
-body.demo::before {
-  content: "Small Screen (Mobile) Less Than 768px";
-  background-color: burlywood;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  text-align: center;
-  color: white;
-  padding: 0.5em;
-}
-
-@media (min-width: 768px) {
-  body.demo::before {
-    background-color: chocolate;
-    content: "Midsize Screen (Tablet) 768px - 1050px";
-  }
-}
-
-@media (min-width: 1050px) {
-  body.demo::before {
-    background-color: crimson;
-    content: "Large Screen (Notebook) 1050px - 1250px";
-  }
-}
-
-@media (min-width: 1250px) {
-  body.demo::before {
-    background-color: blueviolet;
-    content: "Extra Large Screen (Desktop) 1250px +";
-  }
-} */
-
 /* GRID SYSTEM */
 
 .row > .column {
@@ -274,19 +194,6 @@ body.demo::before {
   }
 }
 
-/* STYLING FOR HEADER AND FOOTER */
-
-.site-header a,
-.site-footer a {
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.site-header a:hover,
-.site-footer a:hover {
-  color: rgba(0, 0, 0, 1);
-  text-decoration: none;
-}
-
 /* LOGO AREA */
 .site-id h1 {
   font-size: 1.5em;
@@ -307,7 +214,6 @@ body.demo::before {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
 }
 
 .site-nav a {
@@ -317,6 +223,19 @@ body.demo::before {
 
 .site-nav .menu-button {
   display: none;
+}
+
+/* STYLING FOR HEADER AND FOOTER */
+
+.site-header a,
+.site-footer a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.site-header a:hover,
+.site-footer a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /* SECTIONS */
@@ -368,11 +287,6 @@ p {
   .toggle-nav .site-nav ul {
     display: block;
     text-align: center;
-  }
-
-  .toggle-nav .site-nav a:hover {
-    background-color: rgba(0, 153, 0, 1);
-    color: white;
   }
 
   .toggle-nav[data-navstate="closed"] ul {
