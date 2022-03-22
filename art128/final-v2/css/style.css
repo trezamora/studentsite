@@ -200,6 +200,7 @@ body {
   margin: 0;
   padding-top: 0.55em;
   text-align: center;
+  justify-content: center;
 }
 
 .site-id h1 .b {
@@ -226,6 +227,11 @@ body {
 }
 
 /* STYLING FOR HEADER AND FOOTER */
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+}
 
 .site-header a,
 .site-footer a {
