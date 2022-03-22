@@ -193,6 +193,7 @@ body {
   max-width: 768px;
   margin: auto;
   padding: 0 4%;
+  border-radius: 1.5em;
 }
 
 /* MEDIA QUERIES (FOR RESPONSIVE DESIGN FOR SCREEN SIZE) */
@@ -547,22 +548,10 @@ form input[type="submit"] {
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
-.site-header.sticky {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-  background-color: #fff;
-}
-
-.site-header.sticky + main {
-  padding-top: 3em;
-}
-
 /* BACKGROUND IMAGE */
 
 .backimage {
   background-image: url(../img/hccfbackground2.png);
-  background-position: center;
+  background-position: center top;
   background-size: cover;
 }
