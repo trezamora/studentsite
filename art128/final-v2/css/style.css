@@ -230,7 +230,6 @@ body {
 
 .site-footer {
   display: flex;
-  justify-content: center;
 }
 
 .site-header a,
