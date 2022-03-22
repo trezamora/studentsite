@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>hccf.redesign</title>
+    <meta
+      name="description"
+      content="This is a minimalist HTML + CSS + JS boiler plate set of code for website projects."
+    />
+
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="backimage" id="top">
+    <header class="site-header toggle-nav animated" data-navstate="closed">
+      <div class="container">
+        <div class="site-id">
+          <h1>
+            <a class="scroll" href="#top">HCCF LOGO</a>
+          </h1>
+        </div>
+        <nav class="site-nav">
+          <button class="menu-button navicon">Menu</button>
+          <ul>
+            <li><a class="scroll" href="#about">Testimonials</a></li>
+            <li><a class="scroll" href="#contact">Contact</a></li>
+            <li><a class="scroll" href="#support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <div class="containerbox"> -->
+    <main class="site-main containerbox">
+      <section class="hero">
+        <h1>Hawaii Children's Cancer Foundation</h1>
+        <p>Serving the needs of Hawaii's families coping with cancer</p>
+        <div class="date">Hawaii Operated Since 1993</div>
+        <a class="button alt scroll" href="#about">Learn More</a>
+        <a class="button alt scroll" href="#contact">Contact Us</a>
+        <a class="button alt scroll" href="#support">Support Today</a>
+      </section>
+
+      <section id="about">
+        <h3 class="section-title">Testimonials</h3>
+      </section>
+
+      <section id="contact">
+        <h3 class="section-title">Contact Us</h3>
+        <form>
+          <label for="contact_name">Name:</label>
+          <input type="text" id="contact_name" name="contact_name" />
+
+          <label for="email">Email Address:</label>
+          <input type="text" id="contact_email" name="contact_email" />
+
+          <label for="contact_message">Message:</label>
+          <textarea id="contact_message" name="contact_message"></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <section id="support">
+        <h3 class="section-title">Support Today</h3>
+        <div class="row">
+          <div class="column one-third">
+            <img
+              src="img/placeholder-1x1.gif"
+              alt="square placeholder-1x1"
+              width="1500"
+              height="1500"
+            />
+          </div>
+          <div class="column one-third">
+            <img
+              src="img/placeholder-1x1.gif"
+              alt="square placeholder-1x1"
+              width="1500"
+              height="1500"
+            />
+          </div>
+          <div class="column one-third">
+            <img
+              src="img/placeholder-1x1.gif"
+              alt="square placeholder-1x1"
+              width="1500"
+              height="1500"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- </div> -->
+    <footer class="site-footer">
+      <div class="container">
+        <nav class="site-nav">
+          <ul>
+            <li><a class="scroll" href="#top">Home</a></li>
+            <li><a class="scroll" href="#about">Testimonials</a></li>
+            <li><a class="scroll" href="#contact">Contact Us</a></li>
+            <li><a class="scroll" href="#support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!--  SCROLL JS  -->
+    <script src="js/scroll.js"></script>
+
+    <!--  STICKY NAV JS  -->
+    <script src="js/sticknav.js"></script>
+
+    <!--  MAIN JS FILE -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
