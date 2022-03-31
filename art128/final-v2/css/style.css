@@ -122,7 +122,8 @@ form input[type="submit"]:hover {
 /* LAYOUT */
 
 body {
-  margin: 0;
+  padding: 0 6%;
+  margin: auto;
 }
 
 /* CONTAINER */
@@ -134,7 +135,7 @@ body {
 }
 
 .containerbox {
-  background-color: rgb(236, 220, 220);
+  background-color: rgb(250, 250, 250);
   max-width: 768px;
   margin: auto;
   padding: 0 4%;
