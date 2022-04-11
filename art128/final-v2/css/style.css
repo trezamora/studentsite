@@ -75,6 +75,17 @@ a:hover {
   margin-right: auto;
 }
 
+/* TESTIMONIAL SECTION */
+
+.testimonialsection {
+
+}
+
+.testimonialimg {
+  max-width: 400px;
+}
+
+
 /* IMAGES */
 
 img {
@@ -164,11 +175,12 @@ body {
 
 .row > .column-one-third {
   margin-bottom: 0%;
+  padding: .5em;
 }
 
 @media (min-width: 768px) {
   .row {
-    gap: 20px;
+    gap: 5px;
     display: flex;
   }
 }
