@@ -170,19 +170,105 @@ body {
 
 /* GRID SYSTEM */
 
-.row > .column-one-third {
-  margin-bottom: 0%;
-  padding: .5em;
+.row .column {
+  margin-bottom: 2%;
 }
 
 @media (min-width: 768px) {
   .row {
-    gap: 5px;
     display: flex;
   }
-  .row > .column-one-third {
+
+  .swap {
+    flex-direction: row-reverse;
+  }
+
+  .one-half {
+    width: 48%;
+  }
+
+  .one-third {
     width: 33.3333%;
   }
+
+  .row > .column-one-third {
+    width: 60%;
+  }
+}
+
+/* CUSTOM GRID */
+
+@media (min-width: 768px) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 6vw);
+    grid-gap: 15px;
+  }
+
+  .item_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.item1 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item2 {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.item3 {
+  grid-column-start: 11;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item5 {
+  grid-column-start: 11;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item6 {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.item7 {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.item8 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
 /* SITE HEADER */
@@ -404,34 +490,4 @@ p {
   height: 700px;
   width: 450px;
   object-fit: cover;
-}
-
-/* .chatboximg {
-  height: 600px;
-  width: 300px;
-} */
-
-/* SUPPORT PHOTO GRID */
-
-.supportimg-grid {
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
-  grid-gap: .5em;
-}
-
-.supportimg-a {
-  grid-row: 1 / 3;
-}
-
-.supportimg-b {
-  grid-column: 2 / 3;
-}
-
-.supportimg-c {
-  grid-row: 3 / 2;
-}
-
-.supportimg-d {
-  grid-column: 3 / 5;
 }
