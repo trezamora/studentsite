@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 5em;
   /* 36px / 16px = 2.25em */
   line-height: 1.1;
 }
@@ -62,7 +62,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* BLOCK QUOTES */
 
 /* HELPER CLASSES */
 
@@ -80,6 +79,11 @@ a:hover {
 
 .testimonialimg {
   max-width: 400px;
+}
+
+h2 {
+  display: inline;
+  position: absolute;
 }
 
 
@@ -333,7 +337,7 @@ body {
 /* SECTIONS */
 
 section {
-  padding: 3em 0;
+  padding: 2em 0;
 }
 
 /* HERO */
@@ -483,11 +487,15 @@ p {
 
 .mapchatbox {
   display: flex;
-  gap: 5%;
+  gap: 20px;
 }
 
 .mapimg {
   height: 700px;
   width: 450px;
   object-fit: cover;
+}
+
+.center {
+  text-align: center;
 }
