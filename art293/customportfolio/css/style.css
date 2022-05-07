@@ -42,7 +42,7 @@ img {
 .site-header,
 .site-footer {
     text-align: center;
-    padding: 3em 0 2em 0;
+    padding: 1em 0 1em 0;
     letter-spacing: 0.05em;
 }
 
@@ -56,7 +56,7 @@ img {
 
 .site-nav ul {
     margin: 0;
-    padding: 2em 0;
+    padding: 1.5em 0;
 }
 
 .site-nav li {
@@ -83,6 +83,7 @@ section {
 /* THUMB IMAGE GRID */
 
 .thumb-grid {
+    padding: 0 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
