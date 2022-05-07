@@ -286,7 +286,7 @@ aside {
   color: #ffe6ff;
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #b785f5,
     -0.2rem 0.1rem 1rem #b785f5, 0.2rem 0.1rem 1rem #b785f5,
-    0 -0.5rem 2rem #956aca, 0 0.5rem 3rem ##956aca;
+    0 -0.5rem 2rem #956aca, 0 0.5rem 3rem #956aca;
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
