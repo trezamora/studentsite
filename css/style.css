@@ -8,14 +8,16 @@ body {
 
 /* GLOBAL COLORS */
 body {
-  background-color: rgb(181, 202, 181);
-  color: rgb(19, 19, 19);
+  background-color: rgb(117, 142, 165, 1);
+  color: rgba(233, 233, 233, 1);
 }
+
 a {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(233, 233, 233, .8);
 }
+
 a:hover {
-  color: rgb(89, 97, 59, 1);
+  color: rgba(168, 203, 236, 1);
 }
 
 /* GLOBAL TYPOGRAPHY*/
@@ -25,9 +27,9 @@ body {
   line-height: 1.4;
 }
 
+
 /* HEADER */
 header {
-  color: rgba(0, 0, 0, 1);
   padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -35,13 +37,11 @@ header {
 }
 
 header a {
-  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   text-transform: uppercase;
 }
 
 header a:hover {
-  color: rgba(255, 255, 255, 1);
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -61,7 +61,7 @@ header a:hover {
 
 .site-nav a {
   display: block;
-  padding: 1em;
+  padding: .5em;
 }
 
 /* BRACKETS DECO */
@@ -125,7 +125,7 @@ header .dbllinedeco a {
 /* DBL LINE DECO FOOTER */
 
 footer .dbllinedeco a {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(233, 233, 233, .8);
   text-decoration: none;
   font: 14px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px 10px;
@@ -176,7 +176,7 @@ footer .dbllinedeco a {
   height: 100%;
   width: 1px;
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(233, 233, 233, .8);
   transition: all 0.5s;
 }
 
@@ -201,15 +201,18 @@ footer .dbllinedeco a {
 
 /* FOOTER */
 footer {
-  color: rgba(0, 0, 0, 0.8);
   padding: 1em;
 }
 
 footer a {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(233, 233, 233, .8);
   display: block;
   padding: 1em;
   text-decoration: none;
+}
+
+footer a:hover {
+  color: rgba(168, 203, 236, 1);
 }
 
 /* LAYOUT */
@@ -259,6 +262,7 @@ aside {
 }
 
 /* HERO SECTION */
+
 .hero {
   text-align: center;
   color: white;
@@ -276,18 +280,13 @@ aside {
 /* NEON LIGHT & FLICKER ANIMATION */
 
 .neon-lights {
-  background-image: radial-gradient(
-    ellipse 15% 15% at 50% 50%,
-    #295229,
-    transparent
-  );
   letter-spacing: 2;
   text-transform: uppercase;
   font-size: 6em;
   color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #b5cab5,
-    -0.2rem 0.1rem 1rem #b5cab5, 0.2rem 0.1rem 1rem #b5cab5,
-    0 -0.5rem 2rem #779b77, 0 0.5rem 3rem #779b77;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #b785f5,
+    -0.2rem 0.1rem 1rem #b785f5, 0.2rem 0.1rem 1rem #b785f5,
+    0 -0.5rem 2rem #956aca, 0 0.5rem 3rem ##956aca;
   animation: shine 2s forwards, flicker 3s infinite;
 }
 
@@ -297,18 +296,18 @@ aside {
   36%,
   75% {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #b5cab5,
-      -0.2rem 0.1rem 1rem #b5cab5, 0.2rem 0.1rem 1rem #b5cab5,
-      0 -0.5rem 2rem #779b77, 0 0.5rem 3rem #779b77;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #b785f5,
+      -0.2rem 0.1rem 1rem #b785f5, 0.2rem 0.1rem 1rem #b785f5,
+      0 -0.5rem 2rem #956aca, 0 0.5rem 3rem #956aca;
   }
   28%,
   33% {
-    color: #b5cab5;
+    color: #b785f5;
     text-shadow: none;
   }
   82%,
   97% {
-    color: #779b77;
+    color: #956aca;
     text-shadow: none;
   }
 }
@@ -323,14 +322,14 @@ aside {
 
 @keyframes shine {
   0% {
-    color: #295229;
+    color: #6a4398;
     text-shadow: none;
   }
   100% {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #b5cab5,
-      -0.2rem 0.1rem 1rem #b5cab5, 0.2rem 0.1rem 1rem #b5cab5,
-      0 -0.5rem 2rem #779b77, 0 0.5rem 3rem #779b77;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #b785f5,
+      -0.2rem 0.1rem 1rem #b785f5, 0.2rem 0.1rem 1rem #b785f5,
+      0 -0.5rem 2rem #956aca, 0 0.5rem 3rem #956aca;
   }
 }
 
@@ -488,8 +487,11 @@ aside {
 }
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
-.page-sub .hero {
-  color: rgba(247, 247, 247);
+
+.page-home header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
 }
 
 .page-sub header {
@@ -499,24 +501,19 @@ aside {
 }
 
 .page-sub .hero {
-  background-image: url(../img/palapalai.gif);
+  background-image: url(../img/giphy2.gif);
   background-position: center;
   background-size: cover;
   /* padding: 30vh 1em 20vh 1em; */
 }
 
 .page-home .hero {
-  background-image: url(../img/palapalai.gif);
+  background-image: url(../img/giphy2.gif);
   background-position: center;
   background-size: cover;
-  /* padding: 30vh 1em 20vh 1em; */
 }
 
-.page-home header {
-  background-color: transparent;
-  position: absolute;
-  width: 100%;
-}
+
 
 /* COURSE WORK SECTION */
 .coursework {
