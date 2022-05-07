@@ -1,7 +1,7 @@
 /* TYPOGRAPHY */
 body {
     font-family: atrament-web, sans-serif;
-    color: rgba (0, 0, 0, .7);
+    color: rgba(0, 0, 0, .7);
     max-width: 1000px;
     margin: 0 auto;
     padding: 1em;
@@ -104,10 +104,10 @@ section {
 .thumb-grid a img {
     filter: brightness(1.05);
     transition: all ease-in-out 0.2s;
-    border: 1px solid rgba(255, 255, 255, 0);
+    border: 5px solid rgba(255, 255, 255, 0);
 }
 
 .thumb-grid a:hover img {
-    filter: brightness(1);
-    border: 1px solid rgba(255, 255, 255, .3);
+    filter: brightness(1.01);
+    border: .5px solid rgba(237, 237, 237, 0.3);
 }
