@@ -532,7 +532,7 @@ pre code {
   width: 100%;
   display: grid;
   border: 1px solid #ddd;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(117, 142, 165, 1);
   padding: 1em 3em;
   margin-bottom: 1em;
   line-height: 1.5;
@@ -541,7 +541,7 @@ pre code {
 .markup-box {
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(117, 142, 165, 1);
   padding: 1em 3em;
   margin-bottom: 1em;
 }
