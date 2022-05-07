@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-/* GLOBAL COLORS*/
+/* GLOBAL COLORS */
 body {
   background-color: rgb(181, 202, 181);
   color: rgb(19, 19, 19);
@@ -266,12 +266,13 @@ aside {
 }
 
 .hero h2 {
-  font-family: "Futura";
-  font-size: 6em;
-  line-height: 1;
+  font-family: 'Press Start 2P';
+  font-size: 4em;
+  line-height: 2;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 4 auto;
 }
+
 /* NEON LIGHT & FLICKER ANIMATION */
 
 .neon-lights {
