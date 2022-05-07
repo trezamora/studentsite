@@ -1,0 +1,111 @@
+/* TYPOGRAPHY */
+body {
+    font-family: atrament-web, sans-serif;
+    color: rgba (0, 0, 0, .7);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 87.5%;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* LINKS */
+
+a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(245, 189, 24, 0.8);
+}
+
+/* HELPERS */
+
+.text-centered {
+    text-align: center;
+}
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* SITE STRUCTURE */
+
+.site-header,
+.site-footer {
+    text-align: center;
+    padding: 3em 0 2em 0;
+    letter-spacing: 0.05em;
+}
+
+.site-id h1 {
+    font-family: bely-display, sans-serif;
+    margin: 0;
+    padding: 1em;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 2em 0;
+}
+
+.site-nav li {
+    margin: 0 .5em;
+    padding: 0;
+    display: inline-block;
+}
+
+.site-nav a {
+    display: block;
+    padding: 1em .5em;
+}
+
+.site-nav a:hover,
+.site-nav a.selected {
+    border-bottom: .1em solid rgba(245, 189, 24, .25);
+}
+
+section {
+    padding: 0 0 3em 0;
+}
+
+/* THUMB IMAGE GRID */
+
+.thumb-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thumb-grid li {
+    list-style-type: none;
+    width: 49.5%;
+    padding-bottom: 0.4%;
+}
+
+@media (min-width:768px) {
+    .thumb-grid li {
+        width: 24.5%;
+    }
+}
+
+.thumb-grid a img {
+    filter: brightness(1.05);
+    transition: all ease-in-out 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.thumb-grid a:hover img {
+    filter: brightness(1);
+    border: 1px solid rgba(255, 255, 255, .3);
+}
