@@ -76,16 +76,24 @@ a:hover {
 
 /* TESTIMONIAL SECTION */
 
-
 .testimonialimg {
   max-width: 400px;
 }
 
 h2 {
-  display: inline;
-  position: absolute;
+  margin: 0.5em 0;
+  max-width: 38em;
 }
 
+.testimonialsection h2 {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .testimonialsection h2 {
+    margin-left: .4em;
+  }
+}
 
 /* IMAGES */
 
@@ -217,6 +225,19 @@ body {
     object-fit: cover;
     display: block;
   }
+
+  .item00 {
+    width: 350px;
+    position: absolute;
+    left: 150px;
+  }
+  
+  .item0 {
+    width: 350px;
+    position: relative;
+    left: 3px;
+  }
+  
 }
 
 .item1 {
@@ -488,6 +509,13 @@ p {
 .mapchatbox {
   display: flex;
   gap: 20px;
+}
+
+.chatboximg {
+  width: 100px;
+  height: 250px;
+  /* display: flex;
+  align-items: content; */
 }
 
 .mapimg {
