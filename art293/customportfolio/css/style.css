@@ -88,6 +88,32 @@ section {
     padding: 0 0 3em 0;
 }
 
+/* FLEX GRID FOR PROJECTS */
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .5em;
+    }
+
+    .one-thirds.column {
+        width: 32%;
+    }
+
+    .two-third.column {
+        width: 60%;
+    }
+}
+
+.two-thrid.column p {
+   max-width: 80%;
+}
+
+.one-thirds.column {
+    width: 60%;
+}
+
 /* THUMB IMAGE GRID */
 
 .thumb-grid {
