@@ -1,16 +1,25 @@
 /* TYPOGRAPHY */
 body {
-    font-family: atrament-web, sans-serif;
+    font-family: futura-pt-bold, sans-serif;
     color: rgba(0, 0, 0, .8);
     max-width: 1000px;
     margin: 0 auto;
     padding: 1em;
-    font-size: 100%;
+    font-size: 87.45%;
     line-height: 1.5em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: futura-pt-bold, sans-serif;
+}
+
 h1 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .text-centered p {
@@ -88,7 +97,7 @@ section {
     padding: 0 0 3em 0;
 }
 
-/* FLEX GRID FOR PROJECTS */
+/* FLEX GRID FOR SMALLER SCREEN */
 
 @media (min-width: 768px) {
     .row {
@@ -97,21 +106,24 @@ section {
         margin-bottom: .5em;
     }
 
-    .one-thirds.column {
+    .one-third {
         width: 32%;
     }
 
-    .two-third.column {
+    .two-third {
         width: 60%;
     }
 }
 
-.two-thrid.column p {
-   max-width: 80%;
-}
+/* FLEX GRID FOR LARGER SCREEN */
 
-.one-thirds.column {
-    width: 60%;
+@media (min-width: 768px) {
+    .one-third.column {
+      width: 25%;
+    }
+    .two-third.column {
+      width: 65%;
+    }
 }
 
 /* THUMB IMAGE GRID */
