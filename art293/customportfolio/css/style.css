@@ -93,34 +93,53 @@ img {
     padding: 0 .5em;
 }
 
-section {
+/* section {
     padding: 0 0 3em 0;
-}
+} */
 
-/* FLEX GRID FOR SMALLER SCREEN */
+/* PROJECT INFORMATION */
 
 @media (min-width: 768px) {
+
     .row {
         display: flex;
         justify-content: space-between;
         margin-bottom: .5em;
     }
-
-    .one-third {
-        width: 32%;
-    }
-
-    .two-third {
-        width: 60%;
-    }
 }
 
-/* FLEX GRID FOR LARGER SCREEN */
+/* FLEX GRID */
 
 @media (min-width: 768px) {
+
+    .project-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .project-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swap {
+        flex-direction: row-reverse;
+    }
+
+    .one-half.column {
+        width: 50%;
+        padding: 1em;
+    }
+
     .one-third.column {
       width: 25%;
     }
+
     .two-third.column {
       width: 65%;
     }
