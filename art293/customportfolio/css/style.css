@@ -54,6 +54,13 @@ img {
     height: auto;
 }
 
+/* VIDEO */
+
+video {
+    width: 100%;
+    height: auto;
+}
+
 /* SITE STRUCTURE */
 
 .site-header,
@@ -93,10 +100,6 @@ img {
     padding: 0 .5em;
 }
 
-/* section {
-    padding: 0 0 3em 0;
-} */
-
 /* PROJECT INFORMATION */
 
 @media (min-width: 768px) {
@@ -125,15 +128,12 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .swap {
-        flex-direction: row-reverse;
+        gap: .5%;
     }
 
     .one-half.column {
         width: 50%;
-        padding: 1em;
+        /* padding: .25em; */
     }
 
     .one-third.column {
