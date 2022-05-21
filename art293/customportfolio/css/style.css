@@ -80,7 +80,7 @@ video {
 
 .site-nav ul {
     margin: 0;
-    padding: 1.5em 0;
+    padding: 1em 0;
 }
 
 .site-nav li {
@@ -98,6 +98,21 @@ video {
 .site-nav a.selected {
     border-bottom: .1em solid rgba(245, 189, 24, .25);
     padding: 0 .5em;
+}
+
+nav.social-nav {
+    text-align: center;
+}
+
+.social-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social-nav li {
+    padding: 0 1em;
+    list-style: none;
+    display: inline-block;
 }
 
 /* PROJECT INFORMATION */
