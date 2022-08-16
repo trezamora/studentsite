@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
 }
@@ -14,16 +15,24 @@ body {
 
 a {
   color: rgba(233, 233, 233, .8);
+  text-decoration: none;
 }
 
 a:hover {
   color: rgba(168, 203, 236, 1);
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* GLOBAL TYPOGRAPHY*/
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 88.75%; /* 14px */
+  font-size: 88.75%;
+  /* 14px */
   line-height: 1.4;
 }
 
@@ -62,47 +71,6 @@ header a:hover {
 .site-nav a {
   display: block;
   padding: .5em;
-}
-
-/* BRACKETS DECO */
-
-.bracketsdeco a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-/* BRACKETS ANIM */
-.bracketsanim a:before,
-.bracketsanim a:after {
-  position: absolute;
-  opacity: 0;
-  font-size: 35px;
-  top: 0px;
-  transition: all 0.3s;
-}
-
-.bracketsanim a:before {
-  content: "[";
-  left: -8px;
-  transform: translateX(10px);
-}
-
-.bracketsanim a:after {
-  content: "]";
-  right: -8px;
-  transform: translateX(-10px);
-}
-
-.bracketsanim a:hover:before,
-.bracketsanim a:hover:after {
-  color: #fff;
-  opacity: 1;
-  transform: translateX(0px);
 }
 
 section {
@@ -291,6 +259,7 @@ aside {
 }
 
 @keyframes blink {
+
   0%,
   22%,
   36%,
@@ -300,11 +269,13 @@ aside {
       -0.2rem 0.1rem 1rem #b785f5, 0.2rem 0.1rem 1rem #b785f5,
       0 -0.5rem 2rem #956aca, 0 0.5rem 3rem #956aca;
   }
+
   28%,
   33% {
     color: #b785f5;
     text-shadow: none;
   }
+
   82%,
   97% {
     color: #956aca;
@@ -325,6 +296,7 @@ aside {
     color: #6a4398;
     text-shadow: none;
   }
+
   100% {
     color: #ffe6ff;
     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #b785f5,
@@ -478,6 +450,7 @@ aside {
   list-style: none;
 }
 
+
 .courses a {
   text-decoration: none;
 }
@@ -551,6 +524,7 @@ dt {
   font-weight: bold;
   margin-top: 1em;
 }
+
 dd {
   margin: 0;
 }
