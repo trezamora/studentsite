@@ -19,7 +19,11 @@ a {
 }
 
 a:hover {
-  color: rgba(168, 203, 236, 1);
+  color: rgb(30, 93, 151);
+}
+
+a[href^="#"] {
+  opacity: 50%;
 }
 
 .project-list {
@@ -528,9 +532,3 @@ dt {
 dd {
   margin: 0;
 }
-
-/* FOR WEB DEV PURPOSES ONLY
-body, * {
-    background-color: rgba(0,0,0,.05);
-    border: 1px solid rgba(0,0,0,.1);
-    color: rgba(0,0,0,.5); */
