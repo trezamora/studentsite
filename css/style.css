@@ -22,7 +22,7 @@ a:hover {
   color: rgba(168, 203, 236, 1);
 }
 
-ul {
+.project-list {
   list-style: none;
   margin: 0;
   padding: 0;
