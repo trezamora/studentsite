@@ -1,154 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>TeeZee Portfolio</title>
-    <meta name="description" content="A minimalistic, simple portfolio site." />
 
-    <!-- VIEWPORT FOR MOBILE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <title>TeeZee Portfolio</title>
+  <meta name="description" content="A minimalistic, simple portfolio site." />
 
-    <!-- FOR IE -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- VIEWPORT FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- MAIN CSS FILE -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!-- FOR IE -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- ADOBE FONTS -->
-    <link rel="stylesheet" href="https://use.typekit.net/mmm3zkr.css" />
+  <!-- MAIN CSS FILE -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-    <!-- FONT AWESOME ICONS -->
-    <script
-      src="https://kit.fontawesome.com/c02c3eda95.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- ADOBE FONTS -->
+  <link rel="stylesheet" href="https://use.typekit.net/mmm3zkr.css" />
 
-  <body>
-    <heaeder class="site-header">
-      <div class="site-id">
-        <h1><a href="index.html">Tre Zamora</a></h1>
+  <!-- FONT AWESOME ICONS -->
+  <script src="https://kit.fontawesome.com/c02c3eda95.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <heaeder class="site-header">
+    <div class="site-id">
+      <h1><a href="index.html">Tre Zamora</a></h1>
+    </div>
+
+    <nav class="site-nav">
+      <ul>
+        <li class="selected"><a href="index.html#work">Work</a></li>
+        <li><a href="about.html#about">About</a></li>
+        <li><a href="contact.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </heaeder>
+
+  <main class="site-main">
+    <section id="work" class="text-centered">
+      <div class="thumb-grid">
+        <li>
+          <a href="art-for-you.html"><img src="img/art_magazine.gif" alt="art for you project image" /></a>
+        </li>
+        <li>
+          <a href="corporate_logo.html"><img src="img/corporate-logo.gif" alt="corporate logo project image" /></a>
+        </li>
+        <li>
+          <a href="podcast-turned-bookcovers.html"><img src="img/podcast_turned_bookcovers.gif"
+              alt="podcast book cover project image" /></a>
+        </li>
+        <li>
+          <a href="usps_stamps.html"><img src="img/usps_stamps.gif" alt="postage stamp project image" /></a>
+        </li>
+        <li>
+          <a href="tourism_logo.html"><img src="img/tourism_logo.gif" alt="tourism logo project image" /></a>
+        </li>
+        <li>
+          <a href="worlds.html"><img src="img/world_within_worlds.gif" alt="worlds project image" /></a>
+        </li>
+        <li>
+          <a href="pictograms.html"><img src="img/pictograms.gif" alt="olympic pictogram project image" /></a>
+        </li>
+        <li>
+          <a href="flag_design.html"><img src="img/vexillological.gif" alt="flag design project image" /></a>
+        </li>
       </div>
+    </section>
+  </main>
 
-      <nav class="site-nav">
-        <ul>
-          <li class="selected"><a href="index.html#work">Work</a></li>
-          <li><a href="about.html#about">About</a></li>
-          <li><a href="contact.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </heaeder>
+  <footer class="site-footer">
+    <nav class="social-nav">
+      <ul>
+        <li>
+          <a href="https://github.com/trezamora">
+            <!--brand icon-->
+            <i class="fa-brands fa-github-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://codepen.io/trezamora">
+            <!--brand icon-->
+            <i class="fa-brands fa-codepen"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
 
-    <main class="site-main">
-      <section id="work" class="text-centered">
-        <div class="thumb-grid">
-          <li>
-            <a href="art-for-you.html"
-              ><img src="img/art_magazine.gif" alt="art for you project image"
-            /></a>
-          </li>
-          <li>
-            <a href="corporate_logo.html"
-              ><img
-                src="img/corporate-logo.gif"
-                alt="corporate logo project image"
-            /></a>
-          </li>
-          <li>
-            <a href="podcast-turned-bookcovers.html"
-              ><img
-                src="img/podcast_turned_bookcovers.gif"
-                alt="podcast book cover project image"
-            /></a>
-          </li>
-          <li>
-            <a href="usps_stamps.html"
-              ><img src="img/usps_stamps.gif" alt="postage stamp project image"
-            /></a>
-          </li>
-          <li>
-            <a href="tourism_logo.html"
-              ><img src="img/tourism_logo.gif" alt="tourism logo project image"
-            /></a>
-          </li>
-          <li>
-            <a href="worlds.html"
-              ><img
-                src="img/world_within_worlds.gif"
-                alt="worlds project image"
-            /></a>
-          </li>
-          <li>
-            <a href="pictograms.html"
-              ><img
-                src="img/pictograms.gif"
-                alt="olympic pictogram project image"
-            /></a>
-          </li>
-          <li>
-            <a href="flag_design.html"
-              ><img
-                src="img/vexillological.gif"
-                alt="flag design project image"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="img/aadd_project.gif"
-                alt="aadd visual identity project image"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="img/stem_project.gif"
-                alt="stem program design research project image"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="img/initium_project.gif"
-                alt="initium restaurant menu project image"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="img/creative_process.gif"
-                alt="california trip highlight video project image"
-            /></a>
-          </li>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="about.html#about">About</a></li>
-          <li><a href="contact.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="social-nav">
-        <ul>
-          <li>
-            <a href="https://github.com/trezamora"
-              ><!--brand icon-->
-              <i class="fa-brands fa-github-square"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://codepen.io/trezamora"
-              ><!--brand icon-->
-              <i class="fa-brands fa-codepen"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
 </html>
