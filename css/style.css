@@ -78,8 +78,12 @@ header a:hover {
 }
 
 section {
-  padding: 3em 1em;
+  padding: 4em 0;
+  display: grid;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 
 /* DBL LINE DECO HEADER */
 
@@ -481,15 +485,13 @@ aside {
   background-image: url(../img/giphy2.gif);
   background-position: center;
   background-size: cover;
-  /* padding: 30vh 1em 20vh 1em; */
 }
 
 .page-home .hero {
   background-image: url(../img/giphy2.gif);
   background-position: center;
-  background-size: cover;
+  border: 1px solid red;
 }
-
 
 
 /* COURSE WORK SECTION */
