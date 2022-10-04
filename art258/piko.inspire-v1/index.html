@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piko, Reach for the Top</title>
+    <meta name="description" content="This is my Sassy Base site" />
+
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/dyh4dxx.css">
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="poly-canvas"></canvas>
+    <header class="site-header">
+
+        <div class="site-id">
+            <div class="logo">
+                <a href="#"><img src="img/piko-logo.png" alt="Piko Square Logo" srcset="">
+            </div></a>
+            <a href="#">
+                <h1 class="hide-visually"><a href="#">Piko</h1>
+            </a>
+        </div>
+
+        <nav class="site-nav" data-navstate="closed">
+            <button class="menu-button"><span class="hide-visually">Menu</span>
+                <svg width="30" height="30">
+                    <title>Menu</title>
+                    <rect id="bar-top" x="20" y="0" width="10" height="3"></rect>
+                    <rect id="bar-middle" x="15" y="8" width="17" height="3"></rect>
+                    <rect id="bar-botton" y="16" width="30" height="3"></rect>
+                </svg>
+            </button>
+            <ul>
+                <li><a href="#pikohome">Home</a></li>
+                <li><a href="#pikoabout">About</a></li>
+                <li><a href="#pikoconnect">Connect</a></li>
+                <li><a href="#pikojoin">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="site-main">
+
+        <section id="pikohome" class="hero animate-on-scroll">
+
+            <div class="hero-container">
+                <img src="img/pikologotype.png" width="400" height="200" alt="" srcset="">
+                <h3>Not all good things come to an end.</h3>
+                <a href="#pikoabout" class="button-hero">What is Piko?</a>
+            </div>
+        </section>
+
+        <section class="scroll-text">
+            <div class="text-scroll">
+                <marquee>
+                    <p>&nbsp;Community is at the heart of what we believe in. <img src="img/pikologowht.svg"
+                            alt="logo light" width="35" height="35"> Inspiring others to
+                        unleash and reach their max potential one story at a time. <img src="img/pikologowht.svg"
+                            alt="logo light" width="35" height="35"> Community is at the heart of what we believe in.
+                        <img src="img/pikologowht.svg" alt="logo light" width="35" height="35"> Inspiring others to
+                        unleash and reach their max potential one story at a time.
+                    </p>
+                </marquee>
+                <img src="img/pikotriangles.png" alt="" srcset="">
+            </div>
+        </section>
+
+        <section id="pikoabout" class="animate-on-scroll">
+
+            <div class="container">
+                <div class="row">
+                    <div class="swirl-scale-in yellow-swirl" id="swirl-yellow"></div>
+                    <div class=" one-half animate-drop-delay">
+                        <img src="img/pikoaboutimg.png" width="1500" height="1500" alt="Placeholder" srcset="">
+                    </div>
+
+                    <div class="one-half">
+                        <h3>If you do what you love,
+                            you'll never work a day in your life.</h3>
+                        <a href="#pikoconnect" class="button">Hear their stories</a>
+                    </div>
+                </div>
+
+                <div class="row stack">
+                    <div class="one-half animate-scale-in">
+                        <img src="img/placeholder-1500x800.gif" width="1500" height="1500" alt="Placeholder" srcset="">
+                    </div>
+
+                    <div class="one-half animate-slide-up">
+                        <h3>A playground for the next generation of creatives.</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="pikoinfo">
+
+            <div class="container">
+                <div class="row">
+                    <div class="one-half">
+                        <h2>Where talent meets purpose.</h2>
+                    </div>
+                    <div class="push-one-half">
+                        <img src="img/pikomission.png" width="1500" height="1500" alt="Placeholder" srcset="">
+                        <div class="text-card">
+                            <h3>Mission</h3>
+                            <p>Highlight, promote, and document stories of
+                                individuals from the birth of their creative
+                                journeys and inspire others looking to start.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="one-half">
+                        <div class="pikostatement">
+                            <div class="pikoimg">
+                                <img src="img/pikovision.png" width="1500" height="1500" alt="Placeholder" srcset="">
+                            </div>
+                            <div class="text-card">
+                                <h3>Vision</h3>
+                                <p>Inspire the next generation to chase their
+                                    passions in life and equip them with the right
+                                    tools and mindset to achieve their goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half">
+                        <h2>Encourage,
+                            Elevate, Value. </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="one-third">
+                        <div class="pikovalues">
+                            <img src="img/pikofoster.png" width="1500" height="1500" alt="Placeholder" srcset="">
+                            <div class="text-card">
+                                <h4>Foster Connections</h4>
+                                <p>Building upon opportunities through hearing the stories of others.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-third">
+                        <div class="pikovalues">
+                            <img src="img/pikocommunity.png" width="1500" height="1500" alt="Placeholder" srcset="">
+                            <div class="text-card">
+                                <h4>Community Empowerment</h4>
+                                <p>Creating a safe space
+                                    to learn, work and grow together.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-third">
+                        <div class="pikovalues">
+                            <img src="img//pikocreate.png" width="1500" height="1500" alt="Placeholder" srcset="">
+                            <div class="text-card">
+                                <h4>Creative Innovation</h4>
+                                <p>Create with curiosity, passion, knowledge, and dedication. Create to impact.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="one-third">
+                        <div class="pikovalues">
+                            <img src="img/pikoaction.png" width="500" height="500" alt="Placeholder" srcset="">
+                            <div class="text-card">
+                                <h4>Actionable Responsibility</h4>
+                                <p>Embracing and acting on opportunities to contribute towards other communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pikoconnect" class="animate-on-scroll">
+
+            <div class="container">
+                <div class="row swap">
+                    <div class="one-half">
+                        <div class="swirl-scale-in yellow-swirl2" id="swirl-yellow2"></div>
+                        <img class="animate-scale-in" src="img/pikoconnectimg.png" width="1500" height="1500"
+                            alt="Placeholder" srcset="">
+                    </div>
+                    <div class="one-half">
+                        <h3>Every story has a beginning.</h3>
+                        <p>Connect with individuals that started exactly where you are starting now. Hear how they
+                            managed the courage to begin
+                            their forever journeys doing what they love doing.</p>
+                        <a href="#" class="button">Find Inspiration</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pikostories" class="animate-on-scroll">
+
+            <div class="container">
+
+                <div class="row swap">
+                    <div class="one-half">
+                        <img class="animate-scale-in" src="img/placeholder-1500x800.gif" width="1500" height="1500"
+                            alt="Placeholder" srcset="">
+                    </div>
+                    <div class="one-half">
+                        <h3>Teah Zamora</h3>
+                        <p>Mother, entrepreneur, small business advocate. The past shapes us, the present sets the pace
+                            to move forward, and the future is where our legacy waits. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pikojoin" class="animate-on-scroll">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="swirl-scale-in yellow-swirl" id="swirl-yellow3"></div>
+                    <div class="one-half animate-drop-delay">
+                        <img src="img/pikojoinimg.png" width="1500" height="1500" alt="Placeholder" srcset="">
+                    </div>
+                    <div class="one-half">
+                        <h3>Hit the ground running!</h3>
+                        <p>Want to share your story? Ready to inspire? You are in the right place, can't wait to
+                            meet
+                            you and hear your story.</p>
+                        <a href="#" class="button">Submit a Story</a>
+                    </div>
+                </div>
+
+                <div class="row stack">
+                    <div class="one-half animate-scale-in">
+                        <img src="img/placeholder-1500x800.gif" width="1500" height="1500" alt="Placeholder" srcset="">
+                    </div>
+                    <div class="one-half animate-slide-up">
+                        <h3>Section 07</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quia. Perspiciatis iure
+                            rerum
+                            delectus
+                            sit, quis aliquam neque repellat doloribus ratione hic ad cum. A accusantium quis libero
+                            impedit
+                            quod.</p>
+                        <a href="#" class="button">Connect with others</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#pikohome">Home</a></li>
+                <li><a href="#pikoabout">About</a></li>
+                <li><a href="#pikoconnect">Connect</a></li>
+                <li><a href="#pikojoin">Join</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- POLY ANIMATION TEST -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+
+    <script src="js/polybackground.js"></script>
+
+    <!-- SMOOTH SCROLL JS FILE CHRIS F -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- LOTTIE -->
+    <script src="js/lottie.js"></script>
+    <!-- MAIN JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
