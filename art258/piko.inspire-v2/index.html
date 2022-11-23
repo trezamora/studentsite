@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piko, Reach for the Top</title>
+    <meta name="description" content="This is my Sassy Base site" />
+
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/dyh4dxx.css">
+
+    <!-- FONT AWESOMES -->
+    <script src="https://kit.fontawesome.com/c02c3eda95.js" crossorigin="anonymous"></script>
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- FORM POP UP -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="poly-canvas"></canvas>
+    <header class="site-header">
+
+        <div class="site-id">
+            <div class="logo">
+                <a href="index.html"><img src="img/piko-logo-light.png" alt="Piko Square Logo" srcset=""></a>
+            </div>
+            <a href="index.html">
+                <h1 class="hide-visually"><a href="#">Piko</h1>
+            </a>
+        </div>
+
+        <nav class="site-nav" data-navstate="closed">
+            <button class="menu-button"><span class="hide-visually">Menu</span>
+                <svg width="30" height="30">
+                    <title>Menu</title>
+                    <rect id="bar-top" x="20" y="0" width="10" height="3"></rect>
+                    <rect id="bar-middle" x="15" y="8" width="17" height="3"></rect>
+                    <rect id="bar-botton" y="16" width="30" height="3"></rect>
+                </svg>
+            </button>
+            <ul>
+                <li><a href="#pikohome">Home</a></li>
+                <li><a href="#pikoabout">About</a></li>
+                <li><a href="#pikoconnect">Connect</a></li>
+                <li><a href="#pikojoin">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="site-main">
+
+        <section id="pikohome" class="hero animate-on-scroll">
+            <div class="bg-video">
+                <video class="video-hero" autoplay muted loop>
+                    <source src="img/piko_about_video_v2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="text-rotation">
+                <div class="text-left">
+                    <p>Piko.</p>
+                </div>
+                <div class="text-rotation-wrapper">
+                    <div class="text-right rotate-text">
+                        Connect
+                        <br>
+                        Responsibility
+                        <br>
+                        Innovation
+                        <br>
+                        Community
+                        <br>
+                        Inspire
+                    </div>
+                </div>
+            </div>
+            <div class="hero-container">
+                <div class="left-box">
+                    <h3>A playground for the next generation of creatives. Not all good things come to an end.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="scroll-text">
+            <div class="text-scroll">
+                <marquee>
+                    <p>&nbsp;Community is at the heart of what we believe in. <img src="img/pikologowht.svg"
+                            alt="logo light" width="35" height="35"> Inspiring others to
+                        unleash and reach their max potential one story at a time. <img src="img/pikologowht.svg"
+                            alt="logo light" width="35" height="35"> Community is at the heart of what we believe in.
+                        <img src="img/pikologowht.svg" alt="logo light" width="35" height="35"> Inspiring others to
+                        unleash and reach their max potential one story at a time.
+                    </p>
+                </marquee>
+            </div>
+        </section>
+
+        <section id="pikoabout" class="animate-on-scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half">
+                        <div class="animate-scale-in about-animation" id="about-animation"></div>
+                    </div>
+                    <div class="one-half animate-slide-left">
+                        <h3>Pursue your passion</h3>
+                        <p>You will never work a day in your life, if you love what you do. Piko taps into the stories
+                            and talents of up and coming individuals that have found their purpose through their craft
+                            and talent.</p>
+                        <a href="#" class="button">Read their stories</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pikoinfo" class="animate-on-scroll">
+            <div class="grid-container">
+                <div class="item8">
+                    <h1>Where talent meets purpose.</h1>
+                </div>
+
+                <div id="piko-info" class="animate-slide-left-text1">
+                    <div class="info-image animate-slide-up-img1">
+                        <img src="img/pikomission.png" alt="" srcset="">
+                    </div>
+                    <div class="item item1">
+                        <h4>Mission</h4>
+                        <p>Highlight, promote, and document stories of
+                            individuals from the birth of their creative
+                            journeys and inspire others looking to start.</p>
+                    </div>
+                </div>
+
+                <div id="piko-info2" class="animate-slide-right-text1">
+                    <div class="info-image animate-slide-up-img2">
+                        <img src="img/pikovision.png" alt="" srcset="">
+                    </div>
+                    <div class="item item2">
+                        <h4>Visions</h4>
+                        <p>Inspire the next generation to chase their
+                            passions in life and equip them with the right
+                            tools and mindset to achieve their goals.</p>
+                    </div>
+                </div>
+
+                <div id="piko-info3" class="animate-slide-right-text2">
+                    <div class="info-image-left animate-slide-up-img3">
+                        <img src="img/pikocommunity.png" alt="" srcset="">
+                    </div>
+                    <div class="item item3">
+                        <h4>Community Empowerment</h4>
+                        <p>Creating a safe space
+                            to learn, work and grow together. Elevating and supporting one another to succeed.</p>
+                    </div>
+                    <div class="item7">
+                        <h1>Encourage,
+                            Elevate, Value.</h1>
+                    </div>
+                </div>
+
+                <div id="piko-info3" class="animate-slide-right-text3">
+                    <div class="info-image-middle animate-slide-up-img4">
+                        <img src="img/pikofoster.png" alt="" srcset="">
+                    </div>
+                    <div class="item item4">
+                        <h4>Foster Connections</h4>
+                        <p>Building upon opportunities through hearing the stories of others.</p>
+                    </div>
+                </div>
+
+                <div id="piko-info3" class="animate-slide-right-text4">
+                    <div class="info-image-right animate-slide-up-img5">
+                        <img src="img/pikocreate.png" alt="" srcset="">
+                    </div>
+                    <div class="item item5">
+                        <h4>Creative Innovation</h4>
+                        <p>Create with curiosity, passion, knowledge, and dedication. Create to impact.</p>
+                    </div>
+                </div>
+
+                <div id="piko-info4" class="animate-slide-left-text2">
+                    <div class="info-image animate-slide-up-img6">
+                        <img src="img/pikoaction.png" alt="" srcset="">
+                    </div>
+                    <div class="item item6">
+                        <h4>Actionable Responsibility</h4>
+                        <p>Embracing and acting on opportunities to contribute towards other communities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pikoconnect" class="animate-on-scroll">
+            <div class="container">
+                <div class="row swap">
+                    <div class="one-half">
+                        <div class="animate-scale-in connect-animation" id="connect-animation"></div>
+                    </div>
+                    <div class="one-half animate-slide-right">
+                        <h3>Every story has a beginning</h3>
+                        <p>Connect with individuals that started exactly where you are starting now. Hear how they
+                            managed the courage to begin
+                            their forever journeys doing what they love doing.</p>
+                        <a href="#" class="button">Find Inspiration</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="swiper-container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="stories-person">
+                            <img class="story-img" src="img/taz-profile.jpg" alt="" srcset="">
+                            <h1 class="stories-number">01</h1>
+                            <h3>Teah Zamora</h3>
+                            <p>Mother, entrepreneur, small business advocate. The past shapes us, the present sets
+                                the
+                                pace
+                                to move forward, and the future is where our legacy&nbsp;waits.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="stories-person">
+                            <img src="img/rjka-profile.jpg" alt="" srcset="">
+                            <h1 class="stories-number">02</h1>
+                            <h3>SQUZ</h3>
+                            <p>Rolling. Background. Action! Running around stage sets all my life, my time is NOW.
+                                Storytelling is the most powerful weapon any person can wield.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="stories-person">
+                            <img src="img/cn-profile.jpg" alt="" srcset="">
+                            <h1 class="stories-number">03</h1>
+                            <h3>Cassandra Neri</h3>
+                            <p>Identity, type, illustrate. I'm a 2nd year student in the New Media Arts Program, ready
+                                to
+                                take fight! Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="stories-person">
+                            <img src="img/jec-profile.jpg" alt="" srcset="">
+                            <h1 class="stories-number">04</h1>
+                            <h3>John Colburn IV</h3>
+                            <p>Many bridges to build, endless systems to architectural sculpt. Improving the world one
+                                design at a time. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        <section id="pikojoin" class="animate-on-scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half">
+                        <div class="animate-scale-in join-animation" id="join-animation"></div>
+                    </div>
+                    <div class="one-half animate-slide-left">
+                        <h3>Hit the ground running!</h3>
+                        <p>Want to share your story? Ready to inspire? You are in the right place, can't wait to
+                            meet
+                            you and hear your&nbsp;story.</p>
+                        <a href="#storyform" id="formbutton" class="button">Submit a Story</a>
+                    </div>
+                    <div class="story-form" id="storyform">
+                        <form action="#">
+                            <ul>
+                                <h1>Share your Story</h1>
+                                <li>
+                                    <input type="text" name="name" id="name" placeholder="Full name">
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                </li>
+                                <li>
+                                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                                </li>
+                                <li>
+                                    <input type="submit" value="Send message" class="button" id="submit">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="together-container">
+                <div class="row">
+                    <div class="one-half animate-slide-up">
+                        <img class="animate-slide-up" src="img/piko-quotes-02.svg" width="1500" height="1500"
+                            alt="Placeholder" srcset="">
+                        <a href="#" class="button">Connect with others</a>
+                    </div>
+                    <div class="one-half animate-slide-up">
+                        <div class="connect-container">
+                            <div class="connect-img">
+                                <img src="img/piko-connectwithus.png" alt="" srcset="">
+                            </div>
+                            <div class="connect-text">
+                                <h3>Join our growing family
+                                    Community is at the heart of what we believe in.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#pikohome">Home</a></li>
+                <li><a href="#pikoabout">About</a></li>
+                <li><a href="#pikoconnect">Connect</a></li>
+                <li><a href="#pikojoin">Join</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="subscribe">
+                    <h3>Subscribe for monthly inspiration</h3>
+                    <p>Subscribe and stay connected with creative individuals on their
+                        journey to the top. Monthly motivation is just a click away. Join the
+                        community and become a member today.</p>
+                    <div class="inspire-box">
+                        <div class="send one-third column">
+                            <p>Send Inspiration</p>
+                        </div>
+                        <div class="enter two-thirds column">
+                            <p>Enter E-Mail Address</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="motivate">
+                    <h3>Motivation on the go!</h3>
+                    <p>Follow us on these social platforms @pikohi for motivation anytime,
+                        anywhere, whenever you need a quick pick me up.</p>
+                    <div class="motivate-box">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POLY ANIMATION TEST -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+    <script src="js/polybackground.js"></script>
+
+    <!-- SMOOTH SCROLL JS FILE CHRIS F -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- LOTTIE -->
+    <script src="js/lottie.js"></script>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
