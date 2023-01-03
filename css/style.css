@@ -490,7 +490,7 @@ aside {
 .page-home .hero {
   background-image: url(../img/giphy2.gif);
   background-position: center;
-  border: 1px solid red;
+  background-size: cover;
 }
 
 
